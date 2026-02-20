@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Parisienne&display=swap');
+
+:root {
+    --text-blue: #002B64;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(./img/background/Tela\ Mobile.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    height: 100dvh;
+}
+
+.containerHeroSection {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 0 24px;
+}
+
+.containerTextHeroSection {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+}
+
+.containerTextHeroSection p:nth-of-type(1) {
+    color: var(--text-blue);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: var(--text-blue);
+    font-family: "Parisienne", cursive;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+hr {
+    border: 1px solid var(--text-blue);
+}
+
+.containerHeroSection p:nth-of-type(2) {
+    color: var(--text-blue);
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.containerMenuLinks {
+    display: flex;
+    gap: 38px;
+    list-style: none;
+}
+
+.containerImgMenuLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background: var(--text-blue);
+    border-radius: 100%;
+}
+
+li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+li a p {
+    color: var(--text-blue);
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+main {
+    margin-top: 48px;
+}
+
+.listaDePresentes {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerListaDePresentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.containerListaDePresentes h2 {
+    margin-bottom: 48px;
+    color: var(--text-blue);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.radio-inputs {
+    position: relative;
+    display: flex;
+    gap: 24px;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 8px;
+    font-size: 12px;
+}
+
+.radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.radio-inputs .radio input {
+    display: none;
+}
+
+.radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked+.name {
+    background-color: #fff;
+    padding: 8px 8px;
+    font-weight: 600;
+}
+
+.localizacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.localizacao h2 {
+    margin-bottom: 24px;
+    color: var(--text-blue);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.containerLocalizacao {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.containerLocalizacao iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+}
